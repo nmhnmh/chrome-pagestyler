@@ -1,5 +1,5 @@
 {
-  "name": "TLDP, The Linux Documentation Project Website Companion",
+  "name": "TLDP Companion",
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "This extension is used as a companion utility for the The Linux Documentation Project(TLDP) website, it will add code highlighting, click to copy to those bash example listings on the web pages, and add some more styles to the page to make it more readable, hope you like it, enjoy!",
