@@ -1,0 +1,45 @@
+{
+  "name": "TLDP, The Linux Documentation Project Website Companion",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "This extension is used as a companion utility for the The Linux Documentation Project(TLDP) website, it will add code highlighting, click to copy to those bash example listings on the web pages, and add some more styles to the page to make it more readable, hope you like it, enjoy!",
+  "homepage_url": "https://niminghao.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "page_action": {
+  },
+  "default_locale": "en",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://tldp.org/LDP/*",
+        "*://www.tldp.org/LDP/*",
+        "*://www.tldp.org/HOWTO/*"
+      ],
+      "css": [
+        "js/highlight/default.css",
+        "js/highlight/xcode.css",
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://tldp.org/LDP/*",
+        "*://www.tldp.org/LDP/*",
+        "*://www.tldp.org/HOWTO/*"
+      ],
+      "js": [
+        "js/highlight/highlight.pack.js",
+        "js/jquery/jquery.min.js",
+        "js/clipboard/clipboard.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}

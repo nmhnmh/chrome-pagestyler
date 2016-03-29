@@ -1,0 +1,32 @@
+i{
+    color:blue;
+}
+pre{
+    background-color:white !important;
+    border:2px solid #E0E0E0;
+}
+.code_block{
+    position:relative;
+}
+.click_to_copy_button{
+    position:absolute;
+    top:2px;
+    right:2px;
+}
+.new_table{
+    border-collapse:collapse;
+    margin:0 auto;
+}
+.new_table thead{
+    background-color: #F0F0F0;
+    font-size:1.1rem;
+}
+.new_table thead th{
+    padding: 6px;
+}
+.new_table tbody td{
+    padding: 4px;
+}
+table.note{
+    border: 2px solid #E0E0E0;
+}
