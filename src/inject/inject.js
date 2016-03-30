@@ -20,10 +20,9 @@ var readyStateCheckInterval = setInterval(function() {
             var ele=$(item)
             ele.addClass('code_block')
             var code=ele.text()
-            code=code.replace(/"/g, '&quot;')
             var click_btn=$('<button class="click_to_copy_button">Copy</button>')
             click_btn.attr('data-clipboard-action', 'copy')
-            click_btn.attr('data-clipboard-text', code)
+            click_btn.attr('data-code', Base64.encode(code))
             ele.prepend(click_btn)
         }
         $('pre').each(function(index, item){
@@ -32,7 +31,11 @@ var readyStateCheckInterval = setInterval(function() {
         $('code').each(function(index, item){
             add_click_to_copy(item)
         })
-        window.clipboard=new Clipboard('.click_to_copy_button')
+        window.clipboard=new Clipboard('.click_to_copy_button', {
+            text: function(target){
+                return Base64.decode(target.getAttribute('data-code'))
+            }
+        })
 
         //add highlight
         hljs.configure({

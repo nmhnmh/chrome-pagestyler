@@ -1,8 +1,8 @@
 {
-  "name": "TLDP Companion",
-  "version": "1.0.0",
+  "name": "TLDP Code Highlighter",
+  "version": "1.0.1",
   "manifest_version": 2,
-  "description": "This extension adds code highlighting, click to copy and more styles to the www.tldp.org pages.",
+  "description": "This extension adds code highlighting, click to copy and more styles to the www.tldp.org code blocks.",
   "homepage_url": "https://niminghao.com",
   "icons": {
     "16": "icons/icon16.png",
@@ -38,6 +38,7 @@
         "js/highlight/highlight.pack.js",
         "js/jquery/jquery.min.js",
         "js/clipboard/clipboard.min.js",
+        "js/base64/base64.js",
         "src/inject/inject.js"
       ]
     }
