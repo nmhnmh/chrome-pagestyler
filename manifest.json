@@ -1,9 +1,9 @@
 {
-  "name": "TLDP Code Highlighter",
-  "version": "1.0.1",
+  "name": "PageStyler",
+  "version": "1.1.1",
   "manifest_version": 2,
-  "description": "This extension adds code highlighting, click to copy and more styles to the www.tldp.org code blocks.",
-  "homepage_url": "https://niminghao.com",
+  "description": "Add more styles to web pages to make them looks better!",
+  "homepage_url": "https://github.com/nmhnmh/chrome-pagestyler",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -20,7 +20,8 @@
       "matches": [
         "*://tldp.org/LDP/*",
         "*://www.tldp.org/LDP/*",
-        "*://www.tldp.org/HOWTO/*"
+        "*://www.tldp.org/HOWTO/*",
+        "*://www.safaribooksonline.com/*"
       ],
       "css": [
         "js/highlight/default.css",
@@ -32,7 +33,8 @@
       "matches": [
         "*://tldp.org/LDP/*",
         "*://www.tldp.org/LDP/*",
-        "*://www.tldp.org/HOWTO/*"
+        "*://www.tldp.org/LDP/*",
+        "*://www.safaribooksonline.com/*"
       ],
       "js": [
         "js/highlight/highlight.pack.js",
